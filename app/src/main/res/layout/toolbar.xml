@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="@dimen/activity_half_margin"
+    android:elevation="5dp"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_half_margin">
+
+        <ImageView
+            android:id="@+id/ivCrossToolbarHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:src="@drawable/cross_mark"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/colorAccent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvToolbarHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Test App"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
